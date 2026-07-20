@@ -1,1253 +1,1223 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="theme-color" content="#060816" id="theme-color-meta" />
-
-  <title>ISHALI CHAVAN | Finance Portfolio</title>
-
-  <meta name="description"
-    content="Professional Finance Portfolio of Ishali Chavan - Assistant Manager at Wipro specializing in Revenue Management, SAP, Financial Reporting, and Business Analysis." />
-  <meta name="keywords"
-    content="Finance Portfolio, Wipro, SAP, Financial Reporting, Revenue Management, Excel, Business Analysis, Pune Finance Professional" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-  <style>
-    :root {
-      --bg-light: #f0f4fa;
-      --bg2-light: #e6effc;
-      --text-light: #2b3d4f;
-      --muted-light: #5a6f8c;
-      --glass-light: rgba(255, 255, 255, 0.7);
-      --border-light: rgba(0, 0, 0, 0.1);
-      --accent-light: #007bff;
-      --accent2-light: #6610f2;
-      --glow-light: 0 0 25px rgba(0, 123, 255, 0.3);
-
-      --bg-dark: #060816;
-      --bg2-dark: #0e1327;
-      --text-dark: #eef4ff;
-      --muted-dark: #a7b3d1;
-      --glass-dark: rgba(255, 255, 255, 0.08);
-      --glass-strong-dark: rgba(255, 255, 255, 0.12);
-      --border-dark: rgba(255, 255, 255, 0.14);
-      --accent-dark: #6ddcff;
-      --accent2-dark: #8b7dff;
-      --glow-dark: 0 0 30px rgba(109, 220, 255, 0.4);
-
-      --radius: 28px;
-      --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-      --container: min(1250px, calc(100% - 1.5rem));
-      --transition: .35s cubic-bezier(.4, 0, .2, 1);
-    }
-
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-      font-size: 16px;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text-light);
-      background:
-        radial-gradient(circle at top left, rgba(0, 123, 255, 0.08), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(102, 16, 242, 0.08), transparent 30%),
-        linear-gradient(135deg, var(--bg-light), var(--bg2-light));
-      overflow-x: hidden;
-      min-height: 100vh;
-      position: relative;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      transition: background-color var(--transition), color var(--transition);
-    }
-
-    body.dark-mode {
-      color: var(--text-dark);
-      background:
-        radial-gradient(circle at top left, rgba(109, 220, 255, 0.15), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(139, 125, 255, 0.18), transparent 30%),
-        linear-gradient(135deg, var(--bg-dark), var(--bg2-dark));
-    }
-
-    /* BACKGROUND TEXTURE */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='rgba(0,0,0,0.03)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3C/g%3E%3C/svg%3E");
-      opacity: .5;
-      pointer-events: none;
-      z-index: -2;
-    }
-
-    body.dark-mode::before {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.03)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      backdrop-filter: blur(2px);
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    section {
-      padding: clamp(5rem, 7vw, 8rem) 0;
-    }
-
-    .container {
-      width: var(--container);
-      margin-inline: auto;
-      padding-inline: 0.75rem;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* SCROLLBAR */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--bg-light);
-    }
-
-    body.dark-mode ::-webkit-scrollbar-track {
-      background: #0c1124;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 50px;
-      background: linear-gradient(var(--accent-light), var(--accent2-light));
-    }
-
-    body.dark-mode ::-webkit-scrollbar-thumb {
-      background: linear-gradient(var(--accent-dark), var(--accent2-dark));
-    }
-
-    /* MOUSE GLOW EFFECT */
-    .mouse-follower {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 30px;
-      height: 30px;
-      border: 2px solid rgba(0, 123, 255, 0.6);
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 99999;
-      transition: transform .1s linear, border-color .3s var(--transition);
-      box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
-      background: rgba(0, 123, 255, 0.05);
-      backdrop-filter: blur(10px);
-    }
-
-    body.dark-mode .mouse-follower {
-      border-color: rgba(109, 220, 255, 0.6);
-      box-shadow: 0 0 15px rgba(109, 220, 255, 0.5);
-      background: rgba(109, 220, 255, 0.05);
-    }
-
-    .mouse-follower.hover {
-      transform: translate(-50%, -50%) scale(1.2);
-      border-color: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
-    }
-
-    .mouse-follower-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent-light);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 99999;
-      transition: transform .1s linear, background-color .3s var(--transition);
-      box-shadow: 0 0 10px var(--accent-light);
-    }
-
-    body.dark-mode .mouse-follower-dot {
-      background: var(--accent-dark);
-      box-shadow: 0 0 10px var(--accent-dark);
-    }
-
-    .mouse-follower-dot.hover {
-      transform: translate(-50%, -50%) scale(1.5);
-      background: white;
-      box-shadow: 0 0 15px white;
-    }
-
-    @media (pointer: coarse) {
-      .mouse-follower,
-      .mouse-follower-dot {
-        display: none;
-      }
-    }
-
-    /* FROSTEDGLASS */
-    .glass {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04));
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(28px) saturate(180%);
-      -webkit-backdrop-filter: blur(28px) saturate(180%);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-      transition: var(--transition);
-    }
-
-    .glass::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, rgba(255, 255, 255, 0.14), transparent 50%);
-      pointer-events: none;
-      opacity: .4;
-    }
-
-    .glass:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 50px rgba(0, 0, 0, 0.4);
-    }
-
-    body.dark-mode .glass {
-      background: var(--glass-dark);
-      border: 1px solid var(--border-dark);
-      box-shadow: var(--shadow);
-    }
-
-    body.dark-mode .glass::before {
-      background: linear-gradient(120deg, rgba(255, 255, 255, 0.14), transparent 50%);
-      opacity: .4;
-    }
-
-    body.dark-mode .glass:hover {
-      box-shadow: 0 0 40px rgba(109, 220, 255, 0.15), 0 0 70px rgba(139, 125, 255, 0.12);
-    }
-
-
-    /* SHIMMERING DUST */
-    .dust {
-      position: fixed;
-      inset: 0;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .dust-particle {
-      position: absolute;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
-      border-radius: 50%;
-      animation: dust-fall linear infinite;
-      opacity: 0;
-      filter: blur(2px);
-    }
-
-    body.dark-mode .dust-particle {
-      background: radial-gradient(circle, rgba(109, 220, 255, 0.4), rgba(109, 220, 255, 0) 70%);
-    }
-
-    @keyframes dust-fall {
-      0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-      }
-      80% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(110vh) translateX(200px) rotate(720deg);
-        opacity: 0;
-      }
-    }
-
-
-    /* HEADER */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      padding-top: env(safe-area-inset-top);
-      background: rgba(8, 12, 25, 0.55);
-      backdrop-filter: blur(24px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      transition: background-color var(--transition), border-color var(--transition);
-    }
-
-    body.dark-mode header {
-      background: rgba(10, 14, 28, 0.72);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .header-inner {
-      width: var(--container);
-      margin-inline: auto;
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      overflow: hidden;
-    }
-
-    .logo {
-      font-size: clamp(1.1rem, 2vw, 1.7rem);
-      font-weight: 800;
-      white-space: nowrap;
-      letter-spacing: 1px;
-      transition: color var(--transition);
-    }
-
-    nav {
-      display: flex;
-      gap: .35rem;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scrollbar-width: none;
-      white-space: nowrap;
-      max-width: 100%;
-    }
-
-    nav::-webkit-scrollbar {
-      display: none;
-    }
-
-    nav a {
-      padding: .75rem 1rem;
-      border-radius: 999px;
-      color: var(--muted-light);
-      transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
-      font-size: clamp(.75rem, 1vw, .95rem);
-      flex-shrink: 0;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    body.dark-mode nav a {
-      color: var(--muted-dark);
-    }
-
-    nav a:hover,
-    nav a.active {
-      background: rgba(0, 123, 255, 0.12);
-      color: var(--accent-light);
-      box-shadow: var(--glow-light);
-    }
-
-    body.dark-mode nav a:hover,
-    body.dark-mode nav a.active {
-      background: rgba(109, 220, 255, 0.12);
-      color: var(--accent-dark);
-      box-shadow: var(--glow-dark);
-    }
-
-    /* HERO */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 120px;
-    }
-
-    .hero-card {
-      display: grid;
-      grid-template-columns: minmax(260px, 340px) 1fr;
-      gap: clamp(2rem, 5vw, 4rem);
-      padding: clamp(1.5rem, 4vw, 3rem);
-      align-items: center;
-    }
-
-    .profile {
-      display: flex;
-      justify-content: center;
-    }
-
-    .profile img {
-      width: min(320px, 100%);
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid rgba(255, 255, 255, 0.14);
-      box-shadow: 0 0 40px rgba(0, 123, 255, 0.25);
-      transition: var(--transition);
-    }
-
-    body.dark-mode .profile img {
-      border: 3px solid rgba(255, 255, 255, 0.14);
-      box-shadow: 0 0 40px rgba(109, 220, 255, 0.25);
-    }
-
-    .profile img:hover {
-      transform: scale(1.04);
-    }
-
-    .hero-content h1 {
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      line-height: 1.05;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 1rem;
-      transition: color var(--transition);
-    }
-
-    .hero-content h2 {
-      color: var(--accent-light);
-      font-size: clamp(1rem, 3vw, 1.4rem);
-      margin-bottom: 1.2rem;
-      font-weight: 500;
-    }
-
-    body.dark-mode .hero-content h2 {
-      color: var(--accent-dark);
-    }
-
-    .hero-content p {
-      color: var(--muted-light);
-      line-height: 1.9;
-      max-width: 65ch;
-      margin-bottom: 2rem;
-      font-size: clamp(.95rem, 1.5vw, 1.05rem);
-    }
-
-    body.dark-mode .hero-content p {
-      color: var(--muted-dark);
-    }
-
-    .buttons,
-    .social {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .7rem;
-      padding: 1rem 1.4rem;
-      border-radius: 999px;
-      transition: var(--transition);
-      font-weight: 600;
-      border: 1px solid rgba(0, 123, 255, 0.3);
-    }
-
-    .primary {
-      background: linear-gradient(135deg, var(--accent-light), var(--accent2-light));
-      color: white;
-      box-shadow: var(--glow-light);
-    }
-
-    .secondary {
-      background: rgba(0, 123, 255, 0.05);
-    }
-
-    body.dark-mode .btn {
-      border: 1px solid rgba(109, 220, 255, 0.3);
-    }
-
-    body.dark-mode .primary {
-      background: linear-gradient(135deg, var(--accent-dark), var(--accent2-dark));
-      box-shadow: var(--glow-dark);
-    }
-
-    body.dark-mode .secondary {
-      background: rgba(109, 220, 255, 0.05);
-    }
-
-    .btn:hover {
-      transform: translateY(-5px);
-    }
-
-    .social {
-      margin-top: 1.8rem;
-    }
-
-    .social a {
-      width: 52px;
-      height: 52px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(0, 123, 255, 0.08);
-      border: 1px solid rgba(0, 123, 255, 0.08);
-      transition: var(--transition);
-    }
-
-    body.dark-mode .social a {
-      background: rgba(109, 220, 255, 0.08);
-      border: 1px solid rgba(109, 220, 255, 0.08);
-    }
-
-    .social a:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--glow-light);
-      background: var(--accent-light);
-      color: white;
-    }
-
-    body.dark-mode .social a:hover {
-      box-shadow: var(--glow-dark);
-      background: var(--accent-dark);
-    }
-
-    /* SECTION TITLE */
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-title h2 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: .8rem;
-      font-weight: 700;
-      transition: color var(--transition);
-    }
-
-    .section-title p {
-      color: var(--muted-light);
-      max-width: 700px;
-      margin-inline: auto;
-      font-size: clamp(.9rem, 1.2vw, 1rem);
-    }
-
-    body.dark-mode .section-title p {
-      color: var(--muted-dark);
-    }
-
-    /* CARDS (General use for About, Skills, Projects, Achievements, Languages) */
-    .card {
-      padding: 2rem;
-      transition: var(--transition);
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h3 {
-      margin-bottom: .7rem;
-      font-size: 1.2rem;
-      transition: color var(--transition);
-    }
-
-    .card p {
-      color: var(--muted-light);
-      line-height: 1.8;
-      font-size: clamp(.9rem, 1vw, 1rem);
-    }
-
-    body.dark-mode .card p {
-      color: var(--muted-dark);
-    }
-
-    .card i {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--accent-light);
-    }
-
-    body.dark-mode .card i {
-      color: var(--accent-dark);
-    }
-
-    /* SPECIFIC CARD STYLES */
-    .skill-card p {
-      margin-bottom: 0.8rem;
-    }
-
-    .skill-card .progress-bar-container {
-      height: 12px;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 50px;
-      overflow: hidden;
-      margin-top: 10px;
-      transition: background-color var(--transition);
-    }
-
-    body.dark-mode .skill-card .progress-bar-container {
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    .skill-card .progress-bar {
-      height: 100%;
-      background: linear-gradient(90deg, var(--accent-light), var(--accent2-light));
-      box-shadow: var(--glow-light);
-      transition: width 2s ease-out;
-    }
-
-    body.dark-mode .skill-card .progress-bar {
-      background: linear-gradient(90deg, var(--accent-dark), var(--accent2-dark));
-      box-shadow: var(--glow-dark);
-    }
-
-    /* EXPERIENCE */
-    .experience-item {
-      padding: 2rem;
-      margin-bottom: 1.5rem;
-      transition: var(--transition);
-    }
-
-    .experience-item:hover {
-      transform: translateY(-8px);
-    }
-
-    .experience-item h3 {
-      font-size: 1.3rem;
-      margin-bottom: .4rem;
-      transition: color var(--transition);
-    }
-
-    .experience-item h4 {
-      color: var(--accent-light);
-      margin-bottom: .8rem;
-      font-weight: 500;
-      font-size: 1.1rem;
-    }
-
-    body.dark-mode .experience-item h4 {
-      color: var(--accent-dark);
-    }
-
-    .experience-item p {
-      color: var(--muted-light);
-      line-height: 1.8;
-      font-size: clamp(.9rem, 1vw, 1rem);
-    }
-
-    body.dark-mode .experience-item p {
-      color: var(--muted-dark);
-    }
-
-    .experience-item ul {
-      color: var(--muted-light);
-      line-height: 1.9;
-      padding-left: 25px;
-      font-size: clamp(.9rem, 1vw, 1rem);
-    }
-
-    body.dark-mode .experience-item ul {
-      color: var(--muted-dark);
-    }
-
-    .experience-item li {
-      margin-bottom: .6rem;
-    }
-
-    /* CONTACT */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .contact-item {
-      padding: 2rem;
-      text-align: center;
-      transition: var(--transition);
-    }
-
-    .contact-item:hover {
-      transform: translateY(-8px);
-    }
-
-    .contact-item i {
-      font-size: 2rem;
-      color: var(--accent-light);
-      margin-bottom: 1rem;
-    }
-
-    body.dark-mode .contact-item i {
-      color: var(--accent-dark);
-    }
-
-    .contact-item h3 {
-      font-size: 1.3rem;
-      margin-bottom: .5rem;
-      transition: color var(--transition);
-    }
-
-    .contact-item p {
-      color: var(--muted-light);
-      line-height: 1.9;
-    }
-
-    body.dark-mode .contact-item p {
-      color: var(--muted-dark);
-    }
-
-    .contact-item a {
-      text-decoration: underline;
-      color: var(--accent-light);
-      font-weight: 500;
-    }
-
-    body.dark-mode .contact-item a {
-      color: var(--accent-dark);
-    }
-
-    .linkedin-btn {
-      margin-top: 1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: .7rem;
-      background: #0077b5;
-      color: white;
-      padding: 1rem 1.3rem;
-      border-radius: 999px;
-      transition: var(--transition);
-      font-weight: 600;
-      box-shadow: 0 0 15px rgba(0, 119, 181, 0.4);
-    }
-
-    .linkedin-btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 25px rgba(0, 119, 181, 0.5);
-    }
-
-    body.dark-mode .linkedin-btn {
-      background: #0077b5;
-      box-shadow: 0 0 15px rgba(0, 119, 181, 0.4);
-    }
-
-    body.dark-mode .linkedin-btn:hover {
-      box-shadow: 0 0 25px rgba(0, 119, 181, 0.5);
-    }
-
-    /* TOGGLE SWITCH */
-    .theme-toggle {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-left: 1.5rem;
-      cursor: pointer;
-    }
-
-    .toggle-switch {
-      width: 50px;
-      height: 26px;
-      background-color: var(--muted-light);
-      border-radius: 26px;
-      position: relative;
-      transition: background-color var(--transition);
-      cursor: pointer;
-      overflow: hidden; /* For icon positioning */
-    }
-
-    body.dark-mode .toggle-switch {
-      background-color: var(--muted-dark);
-    }
-
-    .toggle-switch::after {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 22px;
-      height: 22px;
-      background-color: white;
-      border-radius: 50%;
-      transition: transform var(--transition);
-    }
-
-    .toggle-switch.dark {
-      transform: translateX(24px);
-    }
-
-    body.dark-mode .toggle-switch::after {
-      background-color: #2b3d4f;
-    }
-
-    body.dark-mode .toggle-switch.dark::after {
-      background-color: white;
-    }
-
-    .toggle-switch .icon {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 0.9rem;
-      color: var(--text-light);
-      transition: opacity var(--transition);
-      opacity: 0;
-    }
-
-    .toggle-switch .icon.sun {
-      left: 6px;
-    }
-
-    .toggle-switch .icon.moon {
-      right: 6px;
-    }
-
-    .toggle-switch.dark .icon.sun {
-      opacity: 0;
-    }
-
-    .toggle-switch .icon.moon {
-      opacity: 1;
-    }
-
-
-    /* FOOTER */
-    footer {
-      padding: 4rem 0;
-      text-align: center;
-      color: var(--muted-light);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      transition: color var(--transition), border-color var(--transition);
-    }
-
-    body.dark-mode footer {
-      color: var(--muted-dark);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    footer h2 {
-      font-size: 2rem;
-      margin-bottom: .5rem;
-      transition: color var(--transition);
-    }
-
-    body.dark-mode footer h2 {
-      color: var(--text-dark);
-    }
-
-    footer p {
-      font-size: .95rem;
-    }
-
-    footer .social {
-      margin-top: 1.5rem;
-      gap: 1rem;
-    }
-
-    footer .social a {
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.08);
-    }
-
-    body.dark-mode footer .social a {
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.08);
-    }
-
-    /* UTILITIES */
-    .text-center {
-      text-align: center;
-    }
-
-    .mt-1 {
-      margin-top: 1rem;
-    }
-
-    .mb-1 {
-      margin-bottom: 1rem;
-    }
-
-    /* ANIMATION FOR THEME CHANGE */
-    .theme-transition {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--bg-light);
-      z-index: 9999;
-      transition: transform 1s cubic-bezier(.65, .05, .36, 1);
-      transform: translateY(-100%);
-    }
-
-    body.dark-mode .theme-transition {
-      background-color: var(--bg-dark);
-    }
-
-    .theme-transition.animate {
-      transform: translateY(0);
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 920px) {
-      .hero-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .buttons,
-      .social {
-        justify-content: center;
-      }
-
-      .theme-toggle {
-        margin-left: 0;
-        margin-top: 1rem;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .hero-content h1 {
-        letter-spacing: 1px;
-      }
-
-      nav a {
-        padding: .7rem .85rem;
-      }
-
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .toggle-switch {
-        width: 40px;
-        height: 22px;
-      }
-
-      .toggle-switch::after {
-        width: 18px;
-        height: 18px;
-      }
-
-      .toggle-switch.dark {
-        transform: translateX(19px);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-      }
-
-      .theme-transition {
-        display: none;
-      }
-
-      .mouse-follower,
-      .mouse-follower-dot {
-        display: none !important;
-      }
-    }
-  </style>
-</head>
-
-<body id="body">
-  <div class="theme-transition"></div>
-
-  <!-- CUSTOM CURSOR -->
-  <div class="mouse-follower"></div>
-  <div class="mouse-follower-dot"></div>
-
-  <!-- DUST PARTICLES -->
-  <div class="dust" id="dust-particles"></div>
-
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="logo">
-        ISHALI CHAVAN
-      </div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="theme-toggle">
-        <i class="fa-regular fa-sun icon sun"></i>
-        <div class="toggle-switch" id="theme-switch"></div>
-        <i class="fa-solid fa-moon icon moon"></i>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-card glass">
-        <div class="profile">
-          <img src="ishali.jpeg" alt="Ishali Chavan">
-        </div>
-        <div class="hero-content">
-          <h1>
-            ISHALI CHAVAN
-          </h1>
-          <h2>
-            Assistant Manager • Finance Professional • SAP Specialist
-          </h2>
-          <p>
-            Results-driven finance professional with expertise in revenue management,
-            financial reporting, SAP systems, business analytics, and process optimization.
-            Experienced in delivering accurate financial insights, improving operational
-            efficiency, and supporting strategic business decisions in fast-paced corporate
-            environments.
-          </p>
-          <div class="buttons">
-            <a href="ishali_chavan_cv.pdf" class="btn primary" download>
-              <i class="fa-solid fa-download"></i>
-              Download CV
-            </a>
-            <a href="#contact" class="btn secondary">
-              <i class="fa-solid fa-paper-plane"></i>
-              Contact Me
-            </a>
-          </div>
-          <div class="social">
-            <a href="mailto:ishalidc@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="tel:+919011970169">
-              <i class="fa-solid fa-phone"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ishali-chavan" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <div class="section-title">
-        <h2>About Me</h2>
-        <p>
-          Passionate finance professional focused on delivering business value through
-          accurate reporting, strategic analysis, and modern financial systems.
-        </p>
-      </div>
-      <div class="grid">
-        <div class="card glass">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>Financial Analysis</h3>
-          <p>
-            Skilled in analyzing financial data, preparing reports, forecasting trends,
-            and supporting strategic business planning.
-          </p>
-        </div>
-        <div class="card glass">
-          <i class="fa-solid fa-database"></i>
-          <h3>SAP & Reporting</h3>
-          <p>
-            Experienced with SAP processes, reporting systems, revenue tracking,
-            reconciliations, and operational financial workflows.
-          </p>
-        </div>
-        <div class="card glass">
-          <i class="fa-solid fa-lightbulb"></i>
-          <h3>Problem Solving</h3>
-          <p>
-            Strong analytical and communication skills with a focus on process improvement,
-            accuracy, and efficiency.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-title">
-        <h2>Professional Experience</h2>
-        <p>
-          A professional journey built on finance operations, analytical thinking,
-          reporting excellence, and process management.
-        </p>
-      </div>
-      <div class="experience-item glass">
-        <h3>Assistant Manager</h3>
-        <h4>Wipro Limited</h4>
-        <p>
-          Managing revenue operations, preparing financial reports, monitoring business
-          performance metrics, and supporting financial planning activities. Collaborating
-          with cross-functional teams to ensure accurate reporting, operational efficiency,
-          and compliance with internal financial standards.
-        </p>
-      </div>
-      <div class="experience-item glass">
-        <h3>Revenue Management Specialist</h3>
-        <h4>Finance Operations</h4>
-        <p>
-          
-    // Custom Cursor
-    const bodyElement = document.getElementById('body');
-    const mouseFollower = document.querySelector('.mouse-follower');
-    const mouseFollowerDot = document.querySelector('.mouse-follower-dot');
-    const links = document.querySelectorAll('a, button, .btn, .toggle-switch');
-    const themeSwitch = document.getElementById('theme-switch');
-    const themeTransition = document.querySelector('.theme-transition');
-    const themeColorMeta = document.getElementById('theme-color-meta');
-
-    let isDarkMode = localStorage.getItem('theme') === 'dark';
-
-    const updateTheme = (isDark) => {
-        if (isDark) {
-            bodyElement.classList.add('dark-mode');
-            themeColorMeta.setAttribute('content', '#060816');
-            themeSwitch.classList.add('dark');
-        } else {
-            bodyElement.classList.remove('dark-mode');
-            themeColorMeta.setAttribute('content', '#f0f4fa');
-            themeSwitch.classList.remove('dark');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishali Chavan - Finance Professional</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- General Variables & Theme Colors --- */
+        :root {
+            --primary-color: #8a2be2;    /* BlueViolet */
+            --secondary-color: #ff69b4; /* HotPink */
+            --accent-color: #9370db;    /* MediumPurple */
+            --text-color-light: #f0f0f0;
+            --text-color-dark: #333;
+            --background-light: #f8f8f8;
+            --background-dark: #1a1a1a;
+            --card-background-light: rgba(255, 255, 255, 0.2);
+            --card-background-dark: rgba(30, 30, 30, 0.3);
+            --frosted-glass-blur-light: blur(15px);
+            --frosted-glass-blur-dark: blur(15px);
+            --glow-color: rgba(255, 105, 180, 0.5); /* HotPink Glow */
+            --fine-dust-color: rgba(255, 255, 255, 0.4);
+            /* Simple SVG textures for food-like patterns */
+            --food-texture-dark: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><defs><pattern id="pattern-texture" patternUnits="userSpaceOnUse" width="50" height="50"><path d="M0 0 L50 50 M50 0 L0 50" stroke="%23444" stroke-width="1" opacity="0.3"/><path d="M0 25 L50 25 M25 0 L25 50" stroke="%23444" stroke-width="1" opacity="0.3"/></pattern></defs><rect width="100%" height="100%" fill="url(%23pattern-texture)" /></svg>');
+            --food-texture-light: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><defs><pattern id="pattern-texture-light" patternUnits="userSpaceOnUse" width="50" height="50"><path d="M0 0 L50 50 M50 0 L0 50" stroke="%23ccc" stroke-width="1" opacity="0.2"/><path d="M0 25 L50 25 M25 0 L25 50" stroke="%23ccc" stroke-width="1" opacity="0.2"/></pattern></defs><rect width="100%" height="100%" fill="url(%23pattern-texture-light)" /></svg>');
+
+            --cursor-glow-color: rgba(138, 43, 226, 0.7); /* BlueViolet Glow */
+            --cursor-size: 20px;
+            --cursor-trail-size: 40px;
+            --cursor-trail-opacity: 0.5;
         }
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    };
 
-    document.addEventListener('DOMContentLoaded', () => {
-        updateTheme(isDarkMode);
-        // Trigger the animation after the page loads and theme is set
-        setTimeout(() => {
-            const transition = document.querySelector('.theme-transition');
-            if (transition) {
-                transition.classList.add('animate');
-                transition.addEventListener('transitionend', () => {
-                    transition.remove();
+        body.dark-mode {
+            --primary-color: #9370db;    /* Darker Purple */
+            --secondary-color: #ff1493; /* Deeper Pink */
+            --accent-color: #ba55d3;    /* Medium Orchid */
+            --text-color: var(--text-color-light);
+            --background-color: var(--background-dark);
+            --card-background: var(--card-background-dark);
+            --frosted-glass-blur: var(--frosted-glass-blur-dark);
+            --fine-dust-color: rgba(200, 200, 200, 0.3);
+            --food-texture: var(--food-texture-dark);
+        }
+
+        body.light-mode {
+            --primary-color: #8a2be2;    /* BlueViolet */
+            --secondary-color: #ff69b4; /* HotPink */
+            --accent-color: #9370db;    /* MediumPurple */
+            --text-color: var(--text-color-dark);
+            --background-color: var(--background-light);
+            --card-background: var(--card-background-light);
+            --frosted-glass-blur: var(--frosted-glass-blur-light);
+            --fine-dust-color: rgba(50, 50, 50, 0.1);
+            --food-texture: var(--food-texture-light);
+        }
+
+        /* --- Global Styles --- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            position: relative; /* For background effects */
+            cursor: none; /* Hide default cursor */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 60px 0;
+            position: relative; /* For layered effects */
+            z-index: 10;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .section-header .section-description {
+            font-size: 1.1em;
+            color: var(--accent-color);
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+
+        .content-card {
+            background: var(--card-background);
+            backdrop-filter: var(--frosted-glass-blur);
+            -webkit-backdrop-filter: var(--frosted-glass-blur); /* Safari support */
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative; /* For potential inner glow */
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Food Texture Background --- */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--food-texture);
+            opacity: 0.3; /* Adjust opacity as needed */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* --- Fine Dust Falling Effect (using Particles.js) --- */
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; /* Behind everything else */
+            pointer-events: none;
+        }
+
+        /* --- Cursor Effects --- */
+        .cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--cursor-size);
+            height: var(--cursor-size);
+            background-color: var(--cursor-glow-color);
+            border-radius: 50%;
+            filter: blur(10px);
+            opacity: 0;
+            z-index: 9999;
+            pointer-events: none;
+            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        }
+
+        .cursor-trail {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--cursor-trail-size);
+            height: var(--cursor-trail-size);
+            background-color: rgba(138, 43, 226, 0.3); /* Trail color */
+            border-radius: 50%;
+            filter: blur(15px);
+            opacity: var(--cursor-trail-opacity);
+            z-index: 9998;
+            pointer-events: none;
+            transition: transform 0.4s ease-out;
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background: rgba(255, 255, 255, 0.05); /* Subtle header background */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        body.dark-mode .main-header {
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-title {
+            font-size: 1.8em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .main-nav li {
+            margin-left: 30px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 1.1em;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease-out;
+        }
+
+        .main-nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+        .mode-toggle-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mode-toggle-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.6);
+        }
+
+        /* Hamburger Menu for Mobile */
+        .hamburger-menu {
+            display: none; /* Hidden by default, shown on mobile */
+            cursor: pointer;
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-left: 20px; /* Space from title */
+        }
+
+        /* --- Profile Section --- */
+        .profile-section {
+            min-height: 70vh; /* Make it tall */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden; /* To contain particle effects */
+            padding-top: 100px; /* Account for fixed header */
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1); /* Liquid glass base */
+            backdrop-filter: blur(25px) saturate(200%);
+            -webkit-backdrop-filter: blur(25px) saturate(200%);
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+            position: relative;
+            z-index: 5;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 5px rgba(255, 105, 180, 0.4); /* Pink glow */
+            animation: pulse-glow 2s infinite ease-in-out;
+            position: relative; /* Ensure it's above the glow div */
+            z-index: 2;
+        }
+
+        .image-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255, 105, 180, 0.7) 0%, rgba(255, 105, 180, 0) 70%);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            filter: blur(20px);
+            z-index: 1;
+            animation: fade-glow 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(1); box-shadow: 0 0 0 5px rgba(255, 105, 180, 0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 105, 180, 0.6); }
+            100% { transform: scale(1); box-shadow: 0 0 0 5px rgba(255, 105, 180, 0.4); }
+        }
+
+        @keyframes fade-glow {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        .profile-info h2 {
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .profile-info .title {
+            font-size: 1.3em;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .profile-info .location {
+            font-size: 1.1em;
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn i {
+            font-size: 1.2em;
+        }
+
+        .contact-btn.phone {
+            background: linear-gradient(135deg, #6a0dad 0%, #a020f0 100%); /* Purple gradient */
+            color: white;
+            border: 1px solid #8a2be2;
+        }
+
+        .contact-btn.email {
+            background: linear-gradient(135deg, #ff4500 0%, #ff8c00 100%); /* Orange gradient */
+            color: white;
+            border: 1px solid #ffa500;
+        }
+
+        .contact-btn.linkedin {
+            background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%); /* Blue gradient */
+            color: white;
+            border: 1px solid #0077b5;
+        }
+
+        .contact-btn.download {
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%); /* Green gradient */
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Section Content Styling --- */
+        .content-card p,
+        .content-card li,
+        .timeline-content p,
+        .education-item p,
+        .skill-category li,
+        .award-item p,
+        .contact-details p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+
+        .content-card h3,
+        .timeline-content h3,
+        .education-item h4,
+        .skill-category h3,
+        .award-item h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .content-card h4,
+        .timeline-content h4,
+        .education-item h4,
+        .skill-category h4,
+        .award-item h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        /* --- Timeline Specific --- */
+        .timeline {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--primary-color);
+            opacity: 0.3;
+            top: 0;
+            bottom: 0;
+            left: 50%; /* Center the line */
+            margin-left: -1px; /* Adjust for line width */
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            animation: fadeInRight 0.7s ease-out forwards;
+            opacity: 0;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+            animation: fadeInLeft 0.7s ease-out forwards;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            animation: fadeInRight 0.7s ease-out forwards;
+        }
+
+        /* The circular icon/dot on the timeline */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: -8px; /* Position relative to item */
+            background-color: white;
+            border: 4px solid var(--primary-color);
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd)::after {
+            left: -8px; /* Position on the left side for odd items */
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -8px; /* Position on the right side for even items */
+        }
+
+        .timeline-content {
+            padding: 10px 15px;
+            background-color: var(--card-background);
+            backdrop-filter: var(--frosted-glass-blur);
+            -webkit-backdrop-filter: var(--frosted-glass-blur);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .timeline-content p {
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+
+        /* --- Education, Skills, Awards Specific --- */
+        .education-list, .awards-list, .skills-grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .education-item, .award-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 3px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .education-item:hover, .award-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skills-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            text-align: left;
+        }
+
+        .skill-category {
+            margin-bottom: 20px;
+        }
+
+        .skill-category h3 {
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-category li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            opacity: 0.85;
+        }
+
+        .contact-details {
+            text-align: center;
+        }
+
+        .contact-info-item {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.9;
+        }
+
+        .contact-info-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-item a:hover {
+            color: var(--secondary-color);
+            border-bottom-style: solid;
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--text-color);
+            opacity: 0.6;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .main-header .container {
+                flex-wrap: wrap;
+            }
+
+            .site-title {
+                font-size: 1.5em;
+                flex-basis: 70%; /* Take more space */
+            }
+
+            .main-nav {
+                display: none; /* Hide full nav */
+                width: 100%;
+                text-align: center;
+                order: 3; /* Place below title and toggle */
+                margin-top: 10px;
+            }
+            .main-nav ul {
+                flex-direction: column;
+            }
+            .main-nav li {
+                margin: 10px 0;
+            }
+
+            .hamburger-menu {
+                display: block; /* Show hamburger */
+            }
+
+            .profile-card {
+                padding: 30px 20px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-info h2 {
+                font-size: 2.2em;
+            }
+
+            .profile-info .title {
+                font-size: 1.1em;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .contact-btn {
+                width: 80%; /* Make buttons wider */
+                justify-content: center;
+            }
+
+            .section-header h2 {
+                font-size: 2.2em;
+            }
+
+            .section-header .section-description {
+                font-size: 1em;
+            }
+
+            .timeline::after {
+                left: 30px; /* Shift timeline line */
+            }
+
+            .timeline-item, .timeline-item:nth-child(even) {
+                width: 100%;
+                padding-left: 60px;
+                left: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-item:nth-child(odd) {
+                padding-left: 60px;
+                left: 0 !important;
+                text-align: left !important;
+            }
+
+            .timeline-item::after {
+                left: 22px !important; /* Adjust dot position */
+            }
+             .timeline-item:nth-child(odd)::after,
+             .timeline-item:nth-child(even)::after {
+                 left: 22px !important;
+             }
+
+            .skills-grid {
+                grid-template-columns: 1fr; /* Stack skills on mobile */
+            }
+        }
+
+        /* --- Cursor Handling for Mobile Touch --- */
+        /* Hide the glow cursor on touch devices and use default touch interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .cursor, .cursor-trail {
+                display: none;
+            }
+            body {
+                cursor: auto; /* Restore default cursor for touch */
+            }
+            .contact-btn {
+                /* Increase tap target size */
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Particle JS Container for Dust Effect -->
+    <div id="tsparticles"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">ISHALI CHAVAN</h1>
+            <i class="fas fa-bars hamburger-menu"></i>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mode-toggle" class="mode-toggle-btn" aria-label="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i> <!-- Icon for moon (dark mode) -->
+            </button>
+        </div>
+    </header>
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <div class="main-content-area">
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <div class="profile-card">
+                    <div class="profile-image-wrapper">
+                        <img src="ishali.jpeg" alt="Ishali Chavan" class="profile-pic">
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Ishali Chavan</h2>
+                        <p class="title">Assistant Manager</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Pune, 411046</p>
+                        <div class="contact-links">
+                            <a href="tel:+919011970169" class="contact-btn phone" aria-label="Call Ishali"><i class="fas fa-phone"></i> Call</a>
+                            <a href="mailto:chavanishali1903@gmail.com" class="contact-btn email" aria-label="Email Ishali"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/ishali-chavan" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin" aria-label="View Ishali's LinkedIn profile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <button id="download-cv-btn" class="contact-btn download" aria-label="Download Ishali's CV"><i class="fas fa-download"></i> Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p class="section-description">A brief overview of my professional journey and core strengths.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <p>Accomplished finance professional with a track record of delivering results in revenue recognition, AR discounting, and month-end financial operations. Adept at streamlining processes, ensuring compliance, and improving reporting accuracy to support strategic decision making. Consistently recognized for streamlining processes and implementing solutions that improved team efficiency and delivered measurable results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                    <p class="section-description">My professional roles and responsibilities at Wipro Limited.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Assistant Manager</h3>
+                                <p>Revenue CFL Team - Wipro Ltd (Jan 2025 - Present)</p>
+                                <p>Centralized month-end activities and applied strong analytical skills to proactively review reports, ensuring financial accuracy.</p>
+                                <p>Ensured accurate revenue recognition and compliance with accounting standards.</p>
+                                <p>Identified discrepancies, improved processes, and optimized revenue workflows.</p>
+                                <p>Demonstrated excellent communication and ability to work in a fast-paced environment coordinating cross-functionally.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Senior Executive</h3>
+                                <p>Revenue COE Team - Wipro Ltd (Jul 2024 - Dec 2024)</p>
+                                <p>Applied Financial modeling and Financial modeling tools in managing accounts receivable discounting to enhance cash flow.</p>
+                                <p>Used quantitative skills to assess financial impact and optimize receivables management.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Senior Executive</h3>
+                                <p>AR Sale Team - Wipro Ltd (Mar 2024 - Jun 2024)</p>
+                                <p>Prepared YTD files, ensuring data accuracy for financial tracking, requiring quantitative skills and strong analytical skills.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Executive</h3>
+                                <p>AR Sale Team - Wipro Ltd (Oct 2022 - Mar 2024)</p>
+                                <p>Prepared YTD files, ensuring data accuracy for financial tracking, requiring quantitative skills and strong analytical skills.</p>
+                            </div>
+                        </div>
+                         <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Financial Analyst</h3>
+                                <p>AR Sale Team - Wipro Ltd (Sep 2021 - Sep 2022)</p>
+                                <p>Prepared YTD files, ensuring data accuracy for financial tracking, requiring quantitative skills and strong analytical skills.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>Executive</h3>
+                                <p>Wipro Foundation - Wipro Ltd (May 2023 - Aug 2023)</p>
+                                <p>Developed and implemented valuation and market analysis strategies, leveraging capital markets knowledge and investment banking concepts to enhance liquidity.</p>
+                                <p>Presented findings and strategy using PowerPoint to key stakeholders (Presentation abilities).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <p class="section-description">Key projects undertaken during my career.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <h3>AR Sale Discounting - Symbiosis Centre for Corporate Education, Pune</h3>
+                    <p>July 2023 - September 2023</p>
+                    <p>Focus on applying financial modeling and analytical skills to manage accounts receivable discounting and enhance cash flow.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <p class="section-description">My academic qualifications and institutions.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <div class="education-list">
+                        <div class="education-item">
+                            <h4>EPGDBM FINANCE</h4>
+                            <p>Symbiosis Centre for Corporate Education (Dec 2021 - Dec 2023)</p>
+                            <p>CGPA: 6.74 / 10</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>B.Com - First Class with Distinction</h4>
+                            <p>Savitribai Phule Pune University, Sir Parashurambhau College (Jun 2018 - Apr 2021)</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>12th Commerce</h4>
+                            <p>NMV Girls Jr. College, Pune (Jun 2017 - Apr 2018)</p>
+                            <p>80.92%</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>10th</h4>
+                            <p>Huzurpaga Girls High School, Pune (Jun 2015 - Apr 2016)</p>
+                            <p>82.20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills</h2>
+                    <p class="section-description">A summary of my technical and soft skills.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Technical</h3>
+                            <ul>
+                                <li>Microsoft Excel</li>
+                                <li>SAP</li>
+                                <li>Financial Modelling</li>
+                                <li>PowerPoint</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Finance Expertise</h3>
+                            <ul>
+                                <li>Revenue Recognition</li>
+                                <li>Accounts Receivable Discounting</li>
+                                <li>Financial Modelling</li>
+                                <li>Valuation & Market Analysis</li>
+                                <li>Capital Markets</li>
+                                <li>Investment Banking Concepts</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Analytical Skills</li>
+                                <li>Quantitative Skills</li>
+                                <li>Communication</li>
+                                <li>Presentation Abilities</li>
+                                <li>Problem-Solving</li>
+                                <li>Process Improvement</li>
+                                <li>Cross-functional Coordination</li>
+                                <li>Adaptability (Fast-paced environment)</li>
+                            </ul>
+                        </div>
+                         <div class="skill-category">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>English</li>
+                                <li>Hindi</li>
+                                <li>Marathi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Rewards & Excellence</h2>
+                    <p class="section-description">Recognitions for my contributions and achievements.</p>
+                </div>
+                <div class="content-card frosted-glass">
+                    <div class="awards-list">
+                        <div class="award-item">
+                            <h4>Victory League Habit Flag Bearer (Mar 2025)</h4>
+                            <p>For automating the AR sales MIS, significantly reducing processing time & improving reporting efficiency.</p>
+                        </div>
+                        <div class="award-item">
+                            <h4>Job Excellence (Jul 2024)</h4>
+                            <p>For consistently delivering high-quality results and contributing to the overall success of team objectives.</p>
+                        </div>
+                        <div class="award-item">
+                            <h4>Being Responsive (Aug 2023)</h4>
+                            <p>For taking complete YTD of Wipro Foundation along with AR sales quarter-end work.</
+
+                        </div>
+                        <div class="award-item">
+                            <h4>Badge - Being Responsive (Apr 2022)</h4>
+                            <p>For taking ownership in achieving AR sales target.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Information</h2>
+                    <p class="section-description">Let's connect.</p>
+                </div>
+                <div class="contact-details frosted-glass">
+                    <p class="contact-info-item"><i class="fas fa-phone"></i> +91 9011970169</p>
+                    <p class="contact-info-item"><i class="fas fa-envelope"></i> chavanishali1903@gmail.com</p>
+                    <p class="contact-info-item"><i class="fas fa-map-marker-alt"></i> Pune, 411046</p>
+                    <p class="contact-info-item"><a href="https://www.linkedin.com/in/ishali-chavan" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> linkedin.com/in/ishali-chavan</a></p>
+                    <p class="contact-info-item">References available upon request.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Ishali Chavan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particle JS Library for Dust Effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        // --- Initialization ---
+        const body = document.body;
+        const modeToggleBtn = document.getElementById('mode-toggle');
+        const downloadCvBtn = document.getElementById('download-cv-btn');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const mainNav = document.querySelector('.main-nav');
+
+        // --- Cursor Effects ---
+        const cursor = document.querySelector('.cursor');
+        const cursorTrail = document.querySelector('.cursor-trail');
+        let mouseX = 0, mouseY = 0;
+        let trailX = 0, trailY = 0;
+        let animationFrameId;
+
+        function updateCursor() {
+            // Smoothly move trail towards cursor position
+            trailX += (mouseX - trailX) * 0.15;
+            trailY += (mouseY - trailY) * 0.15;
+
+            if (cursor) cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+            if (cursorTrail) cursorTrail.style.transform = `translate3d(${trailX}px, ${trailY}px, 0)`;
+
+            animationFrameId = requestAnimationFrame(updateCursor);
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            if (!cursor.style.opacity || cursor.style.opacity === '0') {
+                cursor.style.opacity = '1';
+                cursorTrail.style.opacity = '0.5'; // Ensure trail is visible
+                if (!animationFrameId) {
+                    updateCursor(); // Start animation loop if not already running
+                }
+            }
+        });
+
+        // Hide cursor when mouse leaves the window
+        document.addEventListener('mouseleave', () => {
+            if (cursor) cursor.style.opacity = '0';
+            if (cursorTrail) cursorTrail.style.opacity = '0';
+            if (animationFrameId) {
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = null;
+            }
+        });
+        // Show cursor when mouse enters the window
+         document.addEventListener('mouseenter', () => {
+            if (cursor) cursor.style.opacity = '1';
+            if (cursorTrail) cursorTrail.style.opacity = '0.5';
+             if (!animationFrameId) {
+                    updateCursor();
+                }
+        });
+
+
+        // --- Theme Toggle ---
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            modeToggleBtn.querySelector('i').className = 'fas fa-sun'; // Change to sun icon
+        } else {
+            body.classList.add('light-mode');
+            modeToggleBtn.querySelector('i').className = 'fas fa-moon'; // Change to moon icon
+        }
+
+        modeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+
+            const icon = modeToggleBtn.querySelector('i');
+            if (body.classList.contains('dark-mode')) {
+                icon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // --- Hamburger Menu Toggle ---
+        hamburgerMenu.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close nav when a link is clicked (for mobile)
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    mainNav.style.display = 'none';
+                }
+            });
+        });
+
+        // --- PDF Download Placeholder ---
+        downloadCvBtn.addEventListener('click', () => {
+            alert("PDF download functionality requires a dedicated library (like html2pdf.js). This button is a placeholder.");
+            // Example using html2pdf.js (requires including the library)
+            /*
+            const element = document.body; // Or a specific element
+            html2pdf(element, {
+                margin:       10,
+                filename:     'ishali-chavan.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            });
+            */
+        });
+
+        // --- Particle JS Configuration for Dust Effect ---
+        // Ensure the particlesJS function is available (it's loaded from CDN)
+        if (window.particlesJS) {
+             particlesJS('tsparticles', {
+                particles: {
+                    number: { value: 100, density: { enable: true, value_area: 800 } },
+                    color: { value: '#ffffff' }, // White dust particles
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+                    size: { value: 2, random: true, anim: { enable: true, speed: 3, size_min: 0.5, sync: false } },
+                    line_linked: { enable: false },
+                    move: {
+                        enable: true,
+                        speed: 0.5, // Slower dust fall
+                        direction: 'bottom', // Falling direction
+                        out_mode: 'out',
+                        bounce: false,
+                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: { enable: false }, // Disable hover effects for particles, focus on cursor
+                        onclick: { enable: false },
+                        resize: true
+                    },
+                },
+                retina_detect: true
+            });
+        } else {
+            console.warn("Particles.js library not loaded. Dust effect will not be visible.");
+        }
+
+        // Scroll animations for timeline items
+        function animateTimelineItems() {
+            const items = document.querySelectorAll('.timeline-item');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the item is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                        // Remove the specific animation class after it plays once
+                        if (entry.target.classList.contains('timeline-item')) {
+                             entry.target.classList.remove('fadeInLeft', 'fadeInRight');
+                        }
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
                 });
-            }
-        }, 100); // Short delay to ensure styles are applied
-    });
+            }, observerOptions);
 
-    window.addEventListener('mousemove', (e) => {
-        let x = e.clientX;
-        let y = e.clientY;
+            items.forEach(item => {
+                // Set initial styles to hide items off-screen
+                item.style.opacity = '0';
+                if (item.classList.contains('timeline-item:nth-child(odd)')) {
+                    item.style.transform = 'translateX(-50px)';
+                } else {
+                    item.style.transform = 'translateX(50px)';
+                }
+                observer.observe(item);
+            });
+        }
 
-        mouseFollower.style.left = `${x}px`;
-        mouseFollower.style.top = `${y}px`;
-        mouseFollowerDot.style.left = `${x}px`;
-        mouseFollowerDot.style.top = `${y}px`;
-    });
-
-    links.forEach(link => {
-        link.addEventListener('mouseover', () => {
-            mouseFollower.classList.add('hover');
-            mouseFollowerDot.classList.add('hover');
-        });
-        link.addEventListener('mouseout', () => {
-            mouseFollower.classList.remove('hover');
-            mouseFollowerDot.classList.remove('hover');
-        });
-    });
-
-    themeSwitch.addEventListener('click', () => {
-        isDarkMode = !isDarkMode;
-        updateTheme(isDarkMode);
-    });
-
-    // Dust Particle Animation
-    const dustContainer = document.getElementById('dust-particles');
-    const numParticles = 70; // Increased number of particles
-
-    for (let i = 0; i < numParticles; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('dust-particle');
-
-        const size = Math.random() * 10 + 3; // Smaller particles
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        particle.style.left = `${Math.random() * 100}vw`;
-        particle.style.animationDuration = `${Math.random() * 8 + 10}s`; // Longer duration for slower fall
-        particle.style.animationDelay = `${Math.random() * 15}s`; // Random start times
-        particle.style.opacity = Math.random() * 0.4 + 0.2; // Fainter particles
-
-        dustContainer.appendChild(particle);
-    }
-
-    // Progress Bar Animation
-    const bars = document.querySelectorAll('.progress-bar');
-    const barObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const bar = entry.target;
-                const width = bar.style.width;
-                bar.style.width = '0'; // Reset to animate from 0
-                // Use requestAnimationFrame for smoother animation
-                requestAnimationFrame(() => {
-                    setTimeout(() => { // Small delay to ensure reset is applied before animation
-                        bar.style.width = width;
-                    }, 50);
-                });
-            }
-        });
-    }, {
-        threshold: 0.5
-    }); // Trigger when 50% is visible
-
-    bars.forEach(bar => barObserver.observe(bar));
-
-    // Active Navigation Link
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-
-    const setActiveNavLink = () => {
-        let currentSection = '';
-        sections.forEach(sec => {
-            const sectionTop = sec.offsetTop - 180; // Adjusted offset for better activation
-            if (window.scrollY >= sectionTop) {
-                currentSection = sec.getAttribute('id');
-            }
+        // Initialize timeline animations after DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+             animateTimelineItems();
+             // Ensure initial cursor state is set
+             if (cursor) cursor.style.opacity = '0';
+             if (cursorTrail) cursorTrail.style.opacity = '0';
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === currentSection) {
-                link.classList.add('active');
-            }
-        });
-    };
+    </script>
 
-    window.addEventListener('scroll', setActiveNavLink);
-    // Call once on load to set initial active link
-    setActiveNavLink();
+</body>
+</html>
