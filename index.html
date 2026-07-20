@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ishali Chavan | Portfolio</title>
+
+<meta name="description"
+content="Professional Portfolio of Ishali Chavan">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#edf6fb,
+#dceef4,
+#edf8f8);
+
+color:#2b3d4f;
+
+overflow-x:hidden;
+
+position:relative;
+
+}
+
+/*=============================
+BACKGROUND BLOBS
+==============================*/
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:-250px;
+
+left:-250px;
+
+width:550px;
+
+height:550px;
+
+border-radius:50%;
+
+background:
+
+rgba(150,210,220,.22);
+
+filter:blur(90px);
+
+animation:blob1 18s infinite alternate;
+
+z-index:-5;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+bottom:-250px;
+
+right:-250px;
+
+width:600px;
+
+height:600px;
+
+border-radius:50%;
+
+background:
+
+rgba(140,180,240,.15);
+
+filter:blur(90px);
+
+animation:blob2 22s infinite alternate;
+
+z-index:-5;
+
+}
+
+@keyframes blob1{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(120px,80px);
+
+}
+
+}
+
+@keyframes blob2{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(-120px,-60px);
+
+}
+
+}
+
+/*=============================
+FLOATING BLOSSOMS
+==============================*/
+
+.blossoms{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-2;
+
+}
+
+.blossom{
+
+position:absolute;
+
+top:-40px;
+
+width:18px;
+
+height:18px;
+
+border-radius:50% 50% 50% 0;
+
+background:
+
+linear-gradient(
+135deg,
+#bfe7ef,
+#d8f7f5);
+
+opacity:.75;
+
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-50px)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(120vh)
+translateX(100px)
+rotate(720deg);
+
+}
+
+}
+
+/*=============================
+HEADER
+==============================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:
+
+rgba(255,255,255,.18);
+
+backdrop-filter:blur(18px);
+
+border-bottom:
+
+1px solid rgba(255,255,255,.30);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#40607f;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#3c5368;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#6ea6c9;
+
+}
+
+.download{
+
+padding:12px 26px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+background:
+
+linear-gradient(
+135deg,
+#5d84b4,
+#7fcfd1);
+
+color:white;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.download:hover{
+
+transform:translateY(-4px);
+
+}
+
+/*=============================
+HERO
+==============================*/
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:150px 8% 80px;
+
+}
+
+.hero-card{
+
+display:grid;
+
+grid-template-columns:
+
+340px
+1fr;
+
+gap:60px;
+
+width:100%;
+
+max-width:1400px;
+
+padding:50px;
+
+background:
+
+rgba(255,255,255,.20);
+
+backdrop-filter:blur(22px);
+
+border-radius:35px;
+
+border:
+
+1px solid rgba(255,255,255,.35);
+
+box-shadow:
+
+0 25px 50px rgba(0,0,0,.08);
+
+}
+
+.profile{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.profile img{
+
+width:300px;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid rgba(255,255,255,.4);
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.05);
+
+}
+
+.hero-content h1{
+
+font-size:4rem;
+
+color:#43698b;
+
+margin-bottom:10px;
+
+}
+
+.hero-content h2{
+
+font-size:1.8rem;
+
+font-weight:500;
+
+margin-bottom:20px;
+
+color:#5d84b4;
+
+}
+
+.hero-content p{
+
+font-size:1.08rem;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+color:#52636d;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-bottom:25px;
+
+}
+
+.btn{
+
+padding:14px 30px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.primary{
+
+background:
+
+linear-gradient(
+135deg,
+#5d84b4,
+#88cfd1);
+
+color:white;
+
+}
+
+.secondary{
+
+background:white;
+
+color:#40607f;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.social{
+
+display:flex;
+
+gap:18px;
+
+margin-top:25px;
+
+}
+
+.social a{
+
+width:52px;
+
+height:52px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:white;
+
+border-radius:50%;
+
+text-decoration:none;
+
+color:#40607f;
+
+font-size:20px;
+
+transition:.35s;
+
+}
+
+.social a:hover{
+
+background:#5d84b4;
+
+color:white;
+
+transform:translateY(-6px);
+
+}
+
+section{
+
+padding:100px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:2.8rem;
+
+margin-bottom:60px;
+
+color:#43698b;
+
+font-weight:700;
+
+}
+
+.glass{
+
+background:
+
+rgba(255,255,255,.18);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+border:
+
+1px solid rgba(255,255,255,.30);
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.08);
+
+padding:40px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="blossoms"></div>
+
+<header>
+
+<div class="logo">
+
+Ishali Chavan
+
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#experience">Experience</a>
+
+<a href="#education">Education</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<a class="download"
+
+href="Ishali_Chavan_CV.pdf"
+
+download>
+
+Download CV
+
+</a>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-card">
+
+<div class="profile">
+
+<img src="ishali.jpeg"
+
+alt="Ishali Chavan">
+
+</div>
+
+<div class="hero-content">
+
+<h1>Ishali Chavan</h1>
+
+<h2>Assistant Manager • Finance Professional</h2>
+
+<p>
+
+Finance professional with experience in Revenue CFL, Revenue COE,
+AR Sale Discounting, SAP, Microsoft Excel, reporting,
+business analysis and financial operations.
+Currently working at Wipro while pursuing continuous
+professional growth in finance and business management.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="Ishali_Chavan_CV.pdf"
+
+download
+
+class="btn primary">
+
+<i class="fa-solid fa-download"></i>
+
+Download CV
+
+</a>
+
+<a href="https://www.linkedin.com/in/ishali-chavan"
+
+target="_blank"
+
+class="btn secondary">
+
+<i class="fab fa-linkedin"></i>
+
+LinkedIn
+
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/ishali-chavan"
+
+target="_blank">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+<a href="tel:YOUR_PHONE">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ABOUT
+========================== -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+<div class="glass">
+
+<p style="font-size:18px; line-height:2; text-align:justify;">
+
+I am a Finance Professional with experience in revenue management,
+business operations, SAP, Microsoft Excel, financial reporting,
+and process optimisation. I enjoy solving business problems,
+working with data, and improving financial processes through
+analytical thinking and technology.
+
+<br><br>
+
+Currently working as an <strong>Assistant Manager at Wipro</strong>,
+I have worked on Revenue CFL, Revenue COE,
+Accounts Receivable, Sales Discounting,
+financial reconciliations and reporting.
+
+<br><br>
+
+Along with my corporate experience,
+I completed my Executive Post Graduate Diploma in Business Management
+(EPGDBM Finance) from Symbiosis International University
+to strengthen my leadership, finance,
+and strategic decision-making skills.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =========================
+EXPERIENCE
+========================== -->
+
+<section id="experience">
+
+<h2 class="section-title">
+
+Professional Experience
+
+</h2>
+
+<div class="glass">
+
+<div class="timeline-item">
+
+<h2 style="color:#4F7FA8;">
+
+Assistant Manager
+
+</h2>
+
+<h3>
+
+Wipro Limited
+
+</h3>
+
+<p>
+
+2022 – Present
+
+</p>
+
+<br>
+
+<ul style="line-height:2;">
+
+<li>
+
+Revenue CFL Operations
+
+</li>
+
+<li>
+
+Revenue COE
+
+</li>
+
+<li>
+
+AR Sales Discounting
+
+</li>
+
+<li>
+
+SAP Financial Processing
+
+</li>
+
+<li>
+
+Revenue Reporting
+
+</li>
+
+<li>
+
+Business Process Improvements
+
+</li>
+
+<li>
+
+Data Validation
+
+</li>
+
+<li>
+
+Financial Reconciliation
+
+</li>
+
+<li>
+
+Stakeholder Management
+
+</li>
+
+<li>
+
+Microsoft Excel Reporting
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+EDUCATION
+========================== -->
+
+<section id="education">
+
+<h2 class="section-title">
+
+Education
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:35px;">
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Executive PG Diploma in Business Management
+
+</h2>
+
+<h3>
+
+Finance
+
+</h3>
+
+<p>
+
+Symbiosis International University
+
+</p>
+
+<br>
+
+<p>
+
+Focused on Corporate Finance,
+Business Strategy,
+Leadership,
+Financial Analysis,
+Economics,
+Risk Management,
+and Management Practices.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Bachelor's Degree
+
+</h2>
+
+<h3>
+
+Commerce
+
+</h3>
+
+<p>
+
+Academic Foundation in Accounting,
+Finance,
+Economics,
+Business Studies
+and Taxation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+CERTIFICATIONS
+========================== -->
+
+<section id="certifications">
+
+<h2 class="section-title">
+
+Certifications
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:30px;">
+
+<div class="glass">
+
+<h3>
+
+SAP
+
+</h3>
+
+<p>
+
+Financial Operations
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+Microsoft Excel
+
+</h3>
+
+<p>
+
+Advanced Reporting &
+Analysis
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+Finance &
+Business Management
+
+</h3>
+
+<p>
+
+Professional Development
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+Business Analytics
+
+</h3>
+
+<p>
+
+Data Driven Decision Making
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- =========================
+SKILLS
+========================== -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Skills
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:35px;">
+
+<div class="glass">
+
+<h3 style="margin-bottom:25px;color:#4F7FA8;">
+
+Finance
+
+</h3>
+
+<div style="margin-bottom:25px;">
+
+<p>Financial Reporting</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:95%;"></div>
+
+</div>
+
+</div>
+
+<div style="margin-bottom:25px;">
+
+<p>Revenue Management</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:94%;"></div>
+
+</div>
+
+</div>
+
+<div style="margin-bottom:25px;">
+
+<p>Accounts Receivable</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:90%;"></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p>Financial Analysis</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:88%;"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="glass">
+
+<h3 style="margin-bottom:25px;color:#4F7FA8;">
+
+Software & Business Tools
+
+</h3>
+
+<div style="margin-bottom:25px;">
+
+<p>SAP</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:90%;"></div>
+
+</div>
+
+</div>
+
+<div style="margin-bottom:25px;">
+
+<p>Microsoft Excel</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:95%;"></div>
+
+</div>
+
+</div>
+
+<div style="margin-bottom:25px;">
+
+<p>PowerPoint</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:92%;"></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p>Business Analysis</p>
+
+<div class="progress">
+
+<div class="progress-bar"
+style="width:90%;"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+KEY STRENGTHS
+========================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Core Strengths
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;">
+
+<div class="glass">
+
+<h3>Leadership</h3>
+
+<p>
+
+Managing business processes,
+stakeholders and operations.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>Communication</h3>
+
+<p>
+
+Professional communication,
+reporting and collaboration.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>Problem Solving</h3>
+
+<p>
+
+Finding efficient financial
+and operational solutions.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>Analytical Thinking</h3>
+
+<p>
+
+Using data to improve
+business decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+PROJECTS
+========================== -->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Featured Projects
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+gap:35px;">
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Revenue Process Optimisation
+
+</h2>
+
+<p style="line-height:1.9;">
+
+Worked on improving Revenue
+CFL and COE processes,
+financial reporting,
+data validation,
+and operational efficiency
+through SAP and Excel.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Business Reporting Dashboard
+
+</h2>
+
+<p style="line-height:1.9;">
+
+Created reporting solutions
+using Microsoft Excel,
+financial data,
+pivot tables,
+dashboards,
+and analysis
+to support business decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+ACHIEVEMENTS
+========================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Achievements
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;">
+
+<div class="glass">
+
+<h3>
+
+🏆 Performance Excellence
+
+</h3>
+
+<p>
+
+Recognised for delivering
+high-quality financial operations
+and process improvements.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+📊 Reporting Excellence
+
+</h3>
+
+<p>
+
+Built accurate reports
+for finance and business teams.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+🚀 Continuous Learning
+
+</h3>
+
+<p>
+
+Completed EPGDBM Finance
+while working full-time.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+LANGUAGES
+========================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Languages
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;">
+
+<div class="glass">
+
+<h2>
+
+English
+
+</h2>
+
+<p>
+
+Professional Proficiency
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h2>
+
+Hindi
+
+</h2>
+
+<p>
+
+Native Proficiency
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h2>
+
+Marathi
+
+</h2>
+
+<p>
+
+Native Proficiency
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- =========================
+CONTACT
+========================== -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact Me
+
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;">
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Get In Touch
+
+</h2>
+
+<br>
+
+<p>
+
+I am always open to discussing new
+career opportunities,
+finance roles,
+business analysis,
+and professional collaborations.
+
+</p>
+
+<br>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+YOUR_EMAIL@gmail.com
+
+</p>
+
+<br>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 XXXXX XXXXX
+
+</p>
+
+<br>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+India
+
+</p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/ishali-chavan"
+
+target="_blank"
+
+class="btn primary">
+
+<i class="fab fa-linkedin"></i>
+
+Connect on LinkedIn
+
+</a>
+
+</div>
+
+<div class="glass">
+
+<h2 style="color:#4F7FA8;">
+
+Download Resume
+
+</h2>
+
+<br>
+
+<p>
+
+Download my latest CV directly.
+
+</p>
+
+<br>
+
+<a href="Ishali_Chavan_CV.pdf"
+
+download
+
+class="btn secondary">
+
+<i class="fa-solid fa-download"></i>
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+
+Thank You
+
+</h2>
+
+<p>
+
+Designed & Developed by
+
+<strong>Ishali Chavan</strong>
+
+</p>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/ishali-chavan"
+
+target="_blank">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+</div>
+
+<p style="margin-top:25px;font-size:.9rem;">
+
+© 2026 Ishali Chavan. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script>
+
+/*==========================
+FLOATING BLOSSOMS
+===========================*/
+
+const blossoms=document.querySelector(".blossoms");
+
+for(let i=0;i<35;i++){
+
+const flower=document.createElement("div");
+
+flower.className="blossom";
+
+flower.style.left=Math.random()*100+"vw";
+
+flower.style.animationDuration=
+(8+Math.random()*10)+"s";
+
+flower.style.animationDelay=
+Math.random()*10+"s";
+
+flower.style.opacity=Math.random();
+
+flower.style.width=
+(12+Math.random()*14)+"px";
+
+flower.style.height=
+flower.style.width;
+
+blossoms.appendChild(flower);
+
+}
+
+/*==========================
+BACK TO TOP
+===========================*/
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>500){
+
+topBtn.style.opacity="1";
+
+topBtn.style.visibility="visible";
+
+}else{
+
+topBtn.style.opacity="0";
+
+topBtn.style.visibility="hidden";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+/*==========================
+SCROLL REVEAL
+===========================*/
+
+const cards=document.querySelectorAll(".glass");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{
+
+opacity:0,
+
+transform:"translateY(60px)"
+
+},
+
+{
+
+opacity:1,
+
+transform:"translateY(0)"
+
+}
+
+],{
+
+duration:800,
+
+fill:"forwards"
+
+});
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+observer.observe(card);
+
+});
+
+/*==========================
+PROGRESS BAR ANIMATION
+===========================*/
+
+const bars=document.querySelectorAll(".progress-bar");
+
+const barObserver=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const width=entry.target.style.width;
+
+entry.target.style.width="0";
+
+setTimeout(()=>{
+
+entry.target.style.width=width;
+
+},300);
+
+}
+
+});
+
+});
+
+bars.forEach(bar=>barObserver.observe(bar));
+
+/*==========================
+ACTIVE NAVIGATION
+===========================*/
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(sec=>{
+
+const top=sec.offsetTop-150;
+
+if(pageYOffset>=top){
+
+current=sec.id;
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.style.color="#3c5368";
+
+if(link.getAttribute("href")==="#"+current){
+
+link.style.color="#5d84b4";
+
+link.style.fontWeight="700";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
