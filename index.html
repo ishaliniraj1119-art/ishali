@@ -1,77 +1,57 @@
+You're right to ask! The previous code block was cut off. I apologize for that.
+
+Here is the **complete and improved** code based on all your requirements:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#060816" />
 
   <title>ISHALI CHAVAN | Finance Portfolio</title>
 
   <meta name="description"
     content="Professional Finance Portfolio of Ishali Chavan - Assistant Manager at Wipro specializing in Revenue Management, SAP, Financial Reporting, and Business Analysis." />
+  <meta name="keywords"
+    content="Finance Portfolio, Wipro, SAP, Financial Reporting, Revenue Management, Excel, Business Analysis, Pune Finance Professional" />
 
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
+  <!-- Open Graph -->
+  <meta property="og:title" content="ISHALI CHAVAN | Finance Portfolio" />
+  <meta property="og:description" content="Professional Finance Portfolio of Ishali Chavan" />
+  <meta property="og:type" content="website" />
 
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <!-- Icons -->
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <style>
     :root {
-
-      --bg:
-        #060816;
-
-      --bg2:
-        #0e1327;
-
-      --text:
-        #eef4ff;
-
-      --muted:
-        #a7b3d1;
-
-      --glass:
-        rgba(255, 255, 255, 0.08);
-
-      --glass-strong:
-        rgba(255, 255, 255, 0.12);
-
-      --border:
-        rgba(255, 255, 255, 0.14);
-
-      --accent:
-        #6ddcff;
-
-      --accent2:
-        #8b7dff;
-
-      --radius:
-        28px;
-
-      --shadow:
-        0 10px 40px rgba(0, 0, 0, 0.35);
-
-      --glow:
-        0 0 30px rgba(109, 220, 255, 0.4);
-
-      --container:
-        min(1250px, calc(100% - 1.5rem));
-
-      --transition:
-        .35s cubic-bezier(.4, 0, .2, 1);
-
+      --bg: #060816;
+      --bg2: #0e1327;
+      --text: #eef4ff;
+      --muted: #a7b3d1;
+      --glass: rgba(255, 255, 255, 0.08);
+      --glass-strong: rgba(255, 255, 255, 0.12);
+      --border: rgba(255, 255, 255, 0.14);
+      --accent: #6ddcff;
+      --accent2: #8b7dff;
+      --radius: 28px;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+      --glow: 0 0 30px rgba(109, 220, 255, 0.4);
+      --container: min(1250px, calc(100% - 1.5rem));
+      --transition: .35s cubic-bezier(.4, 0, .2, 1);
     }
 
     * {
@@ -86,86 +66,47 @@
     }
 
     body {
-
-      font-family:
-        'Inter',
-        sans-serif;
-
-      color:
-        var(--text);
-
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
       background:
-        radial-gradient(circle at top left,
-          rgba(109, 220, 255, 0.15),
-          transparent 30%),
-
-        radial-gradient(circle at bottom right,
-          rgba(139, 125, 255, 0.18),
-          transparent 30%),
-
-        linear-gradient(135deg,
-          var(--bg),
-          var(--bg2));
-
+        radial-gradient(circle at top left, rgba(109, 220, 255, 0.15), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(139, 125, 255, 0.18), transparent 30%),
+        linear-gradient(135deg, var(--bg), var(--bg2));
       overflow-x: hidden;
-
       min-height: 100vh;
-
       position: relative;
-
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* BACKGROUND TEXTURE */
-
     body::before {
-
       content: "";
-
       position: fixed;
-
       inset: 0;
-
-      background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.03)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3C/g%3E%3C/svg%3E");
-
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.03)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3C/g%3E%3C/svg%3E");
       opacity: .5;
-
       pointer-events: none;
-
       z-index: -2;
-
     }
 
     body::after {
-
       content: "";
-
       position: fixed;
-
       inset: 0;
-
       backdrop-filter: blur(2px);
-
       z-index: -1;
-
       pointer-events: none;
-
     }
 
     section {
-
-      padding:
-        clamp(5rem, 7vw, 8rem) 0;
-
+      padding: clamp(5rem, 7vw, 8rem) 0;
     }
 
     .container {
-
-      width:
-        var(--container);
-
+      width: var(--container);
       margin-inline: auto;
-
+      padding-inline: 0.75rem;
     }
 
     img {
@@ -179,7 +120,6 @@
     }
 
     /* SCROLLBAR */
-
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -189,85 +129,43 @@
     }
 
     ::-webkit-scrollbar-thumb {
-
       border-radius: 50px;
-
-      background:
-        linear-gradient(var(--accent),
-          var(--accent2));
-
+      background: linear-gradient(var(--accent), var(--accent2));
     }
 
     /* MODERN CURSOR */
-
     .cursor {
-
       width: 22px;
       height: 22px;
-
-      border:
-        2px solid rgba(255, 255, 255, 0.9);
-
+      border: 2px solid rgba(255, 255, 255, 0.9);
       border-radius: 50%;
-
       position: fixed;
-
       left: 0;
       top: 0;
-
       pointer-events: none;
-
-      transform:
-        translate(-50%, -50%);
-
+      transform: translate(-50%, -50%);
       z-index: 99999;
-
-      transition:
-        transform .08s linear;
-
-      box-shadow:
-        0 0 12px rgba(109, 220, 255, 0.9),
-        0 0 30px rgba(109, 220, 255, 0.7),
-        0 0 60px rgba(139, 125, 255, 0.4);
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
-      backdrop-filter:
-        blur(10px);
-
+      transition: transform .08s linear;
+      box-shadow: 0 0 12px rgba(109, 220, 255, 0.9), 0 0 30px rgba(109, 220, 255, 0.7), 0 0 60px rgba(139, 125, 255, 0.4);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
     }
 
     .cursor-dot {
-
       width: 6px;
       height: 6px;
-
-      background:
-        white;
-
+      background: white;
       border-radius: 50%;
-
       position: fixed;
-
       left: 0;
       top: 0;
-
       pointer-events: none;
-
-      transform:
-        translate(-50%, -50%);
-
+      transform: translate(-50%, -50%);
       z-index: 99999;
-
-      box-shadow:
-        0 0 14px white,
-        0 0 28px var(--accent);
-
+      box-shadow: 0 0 14px white, 0 0 28px var(--accent);
     }
 
     @media (pointer: coarse) {
-
       .cursor,
       .cursor-dot {
         display: none;
@@ -275,130 +173,65 @@
     }
 
     /* FROSTED GLASS */
-
     .glass {
-
-      background:
-        linear-gradient(135deg,
-          rgba(255, 255, 255, 0.11),
-          rgba(255, 255, 255, 0.04));
-
-      border:
-        1px solid rgba(255, 255, 255, 0.12);
-
-      backdrop-filter:
-        blur(28px) saturate(180%);
-
-      -webkit-backdrop-filter:
-        blur(28px) saturate(180%);
-
-      border-radius:
-        var(--radius);
-
-      box-shadow:
-        0 8px 40px rgba(0, 0, 0, 0.35);
-
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
       position: relative;
-
       overflow: hidden;
-
     }
 
     .glass::before {
-
       content: "";
-
       position: absolute;
-
       inset: 0;
-
-      background:
-        linear-gradient(120deg,
-          rgba(255, 255, 255, 0.14),
-          transparent 50%);
-
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.14), transparent 50%);
       pointer-events: none;
-
+      opacity: .4;
     }
 
     /* HEADER */
-
     header {
-
       position: fixed;
-
       top: 0;
       left: 0;
-
       width: 100%;
-
       z-index: 1000;
-
-      padding-top:
-        env(safe-area-inset-top);
-
-      background:
-        rgba(8, 12, 25, 0.55);
-
-      backdrop-filter:
-        blur(24px);
-
-      border-bottom:
-        1px solid rgba(255, 255, 255, 0.08);
-
+      padding-top: env(safe-area-inset-top);
+      background: rgba(8, 12, 25, 0.55);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .header-inner {
-
-      width:
-        var(--container);
-
+      width: var(--container);
       margin-inline: auto;
-
-      min-height:
-        78px;
-
+      min-height: 78px;
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       gap: 1rem;
-
       overflow: hidden;
-
     }
 
     .logo {
-
-      font-size:
-        clamp(1.1rem, 2vw, 1.7rem);
-
+      font-size: clamp(1.1rem, 2vw, 1.7rem);
       font-weight: 800;
-
       white-space: nowrap;
-
       letter-spacing: 1px;
-
     }
 
     nav {
-
       display: flex;
-
       gap: .35rem;
-
       flex-wrap: nowrap;
-
       overflow-x: auto;
-
       scrollbar-width: none;
-
       white-space: nowrap;
-
       max-width: 100%;
-
     }
 
     nav::-webkit-scrollbar {
@@ -406,589 +239,399 @@
     }
 
     nav a {
-
-      padding:
-        .75rem 1rem;
-
-      border-radius:
-        999px;
-
-      color:
-        var(--muted);
-
-      transition:
-        var(--transition);
-
-      font-size:
-        clamp(.75rem, 1vw, .95rem);
-
+      padding: .75rem 1rem;
+      border-radius: 999px;
+      color: var(--muted);
+      transition: var(--transition);
+      font-size: clamp(.75rem, 1vw, .95rem);
       flex-shrink: 0;
-
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     nav a:hover,
     nav a.active {
-
-      background:
-        rgba(109, 220, 255, 0.12);
-
-      color:
-        white;
-
-      box-shadow:
-        var(--glow);
-
+      background: rgba(109, 220, 255, 0.12);
+      color: white;
+      box-shadow: var(--glow);
     }
 
     /* HERO */
-
     .hero {
-
-      min-height:
-        100vh;
-
+      min-height: 100vh;
       display: flex;
-
       align-items: center;
-
-      padding-top:
-        120px;
-
+      padding-top: 120px;
     }
 
     .hero-card {
-
       display: grid;
-
-      grid-template-columns:
-        minmax(260px, 340px) 1fr;
-
-      gap:
-        clamp(2rem, 5vw, 4rem);
-
-      padding:
-        clamp(1.5rem, 4vw, 3rem);
-
+      grid-template-columns: minmax(260px, 340px) 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      padding: clamp(1.5rem, 4vw, 3rem);
       align-items: center;
-
     }
 
     .profile {
-
       display: flex;
       justify-content: center;
-
     }
 
     .profile img {
-
-      width:
-        min(320px, 100%);
-
+      width: min(320px, 100%);
       aspect-ratio: 1/1;
-
       object-fit: cover;
-
       border-radius: 50%;
-
-      border:
-        3px solid rgba(255, 255, 255, 0.14);
-
-      box-shadow:
-        0 0 40px rgba(109, 220, 255, 0.25);
-
-      transition:
-        var(--transition);
-
+      border: 3px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 0 40px rgba(109, 220, 255, 0.25);
+      transition: var(--transition);
     }
 
     .profile img:hover {
-
-      transform:
-        scale(1.04);
-
+      transform: scale(1.04);
     }
 
     .hero-content h1 {
-
-      font-size:
-        clamp(2.5rem, 8vw, 5rem);
-
+      font-size: clamp(2.5rem, 8vw, 5rem);
       line-height: 1.05;
-
       font-weight: 800;
-
       text-transform: uppercase;
-
       letter-spacing: 2px;
-
       margin-bottom: 1rem;
-
     }
 
     .hero-content h2 {
-
-      color:
-        var(--accent);
-
-      font-size:
-        clamp(1rem, 3vw, 1.4rem);
-
+      color: var(--accent);
+      font-size: clamp(1rem, 3vw, 1.4rem);
       margin-bottom: 1.2rem;
-
       font-weight: 500;
-
     }
 
     .hero-content p {
-
-      color:
-        var(--muted);
-
+      color: var(--muted);
       line-height: 1.9;
-
       max-width: 65ch;
-
       margin-bottom: 2rem;
-
-      font-size:
-        clamp(.95rem, 1.5vw, 1.05rem);
-
+      font-size: clamp(.95rem, 1.5vw, 1.05rem);
     }
 
     .buttons,
     .social {
-
       display: flex;
-
       gap: 1rem;
-
       flex-wrap: wrap;
-
     }
 
     .btn {
-
       display: inline-flex;
-
       align-items: center;
-
       gap: .7rem;
-
-      padding:
-        1rem 1.4rem;
-
-      border-radius:
-        999px;
-
-      transition:
-        var(--transition);
-
+      padding: 1rem 1.4rem;
+      border-radius: 999px;
+      transition: var(--transition);
       font-weight: 600;
-
-      border:
-        1px solid rgba(255, 255, 255, 0.1);
-
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .primary {
-
-      background:
-        linear-gradient(135deg,
-          var(--accent),
-          var(--accent2));
-
-      color:
-        white;
-
-      box-shadow:
-        var(--glow);
-
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      box-shadow: var(--glow);
     }
 
     .secondary {
-
-      background:
-        rgba(255, 255, 255, 0.05);
-
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .btn:hover {
-
-      transform:
-        translateY(-5px);
-
+      transform: translateY(-5px);
     }
 
     .social {
-
       margin-top: 1.8rem;
-
     }
 
     .social a {
-
       width: 52px;
       height: 52px;
-
       display: grid;
       place-items: center;
-
       border-radius: 50%;
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
-      border:
-        1px solid rgba(255, 255, 255, 0.08);
-
-      transition:
-        var(--transition);
-
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: var(--transition);
     }
 
     .social a:hover {
-
-      transform:
-        translateY(-6px);
-
-      box-shadow:
-        var(--glow);
-
-      background:
-        rgba(109, 220, 255, 0.12);
-
+      transform: translateY(-6px);
+      box-shadow: var(--glow);
+      background: rgba(109, 220, 255, 0.12);
     }
 
     /* SECTION TITLE */
-
     .section-title {
-
       text-align: center;
-
-      margin-bottom:
-        3rem;
-
+      margin-bottom: 3rem;
     }
 
     .section-title h2 {
-
-      font-size:
-        clamp(2rem, 5vw, 3rem);
-
-      margin-bottom:
-        .8rem;
-
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: .8rem;
+      font-weight: 700;
     }
 
     .section-title p {
-
-      color:
-        var(--muted);
-
-      max-width:
-        700px;
-
+      color: var(--muted);
+      max-width: 700px;
       margin-inline: auto;
-
+      font-size: clamp(.9rem, 1.2vw, 1rem);
     }
 
-    /* GRID */
-
-    .grid {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-      gap:
-        1.5rem;
-
-    }
-
+    /* CARDS (General use for About, Skills, Projects, Achievements, Languages) */
     .card {
-
-      padding:
-        2rem;
-
-      transition:
-        var(--transition);
-
+      padding: 2rem;
+      transition: var(--transition);
     }
 
     .card:hover {
-
-      transform:
-        translateY(-8px);
-
+      transform: translateY(-8px);
     }
 
     .card h3 {
-
-      margin-bottom:
-        .7rem;
-
-      font-size:
-        1.2rem;
-
+      margin-bottom: .7rem;
+      font-size: 1.2rem;
     }
 
     .card p {
-
-      color:
-        var(--muted);
-
-      line-height:
-        1.8;
-
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: clamp(.9rem, 1vw, 1rem);
     }
 
     .card i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
 
-      font-size:
-        2rem;
+    /* SPECIFIC CARD STYLES */
+    .skill-card p {
+      margin-bottom: 0.8rem;
+    }
 
-      margin-bottom:
-        1rem;
+    .skill-card .progress-bar-container {
+      height: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
 
-      color:
-        var(--accent);
-
+    .skill-card .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      box-shadow: var(--glow);
+      transition: width 2s ease-out;
     }
 
     /* EXPERIENCE */
-
     .experience-item {
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      transition: var(--transition);
+    }
 
-      padding:
-        2rem;
-
-      margin-bottom:
-        1.5rem;
-
+    .experience-item:hover {
+      transform: translateY(-8px);
     }
 
     .experience-item h3 {
-
-      font-size:
-        1.2rem;
-
-      margin-bottom:
-        .4rem;
-
+      font-size: 1.3rem;
+      margin-bottom: .4rem;
     }
 
     .experience-item h4 {
-
-      color:
-        var(--accent);
-
-      margin-bottom:
-        .8rem;
-
+      color: var(--accent);
+      margin-bottom: .8rem;
       font-weight: 500;
-
+      font-size: 1.1rem;
     }
 
     .experience-item p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: clamp(.9rem, 1vw, 1rem);
+    }
 
-      color:
-        var(--muted);
+    .experience-item ul {
+      color: var(--muted);
+      line-height: 1.9;
+      padding-left: 25px;
+      font-size: clamp(.9rem, 1vw, 1rem);
+    }
 
-      line-height:
-        1.8;
-
+    .experience-item li {
+      margin-bottom: .6rem;
     }
 
     /* CONTACT */
-
     .contact-grid {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-      gap:
-        1.5rem;
-
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
     .contact-item {
-
-      padding:
-        2rem;
-
+      padding: 2rem;
       text-align: center;
+      transition: var(--transition);
+    }
 
+    .contact-item:hover {
+      transform: translateY(-8px);
     }
 
     .contact-item i {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
 
-      font-size:
-        2rem;
+    .contact-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: .5rem;
+    }
 
-      color:
-        var(--accent);
+    .contact-item p {
+      color: var(--muted);
+      line-height: 1.9;
+    }
 
-      margin-bottom:
-        1rem;
-
+    .contact-item a {
+      text-decoration: underline;
+      color: var(--accent);
+      font-weight: 500;
     }
 
     .linkedin-btn {
-
-      margin-top:
-        1rem;
-
+      margin-top: 1rem;
       display: inline-flex;
-
       align-items: center;
-
       gap: .7rem;
-
-      background:
-        #0077b5;
-
-      color:
-        white;
-
-      padding:
-        1rem 1.3rem;
-
-      border-radius:
-        999px;
-
-      transition:
-        var(--transition);
-
+      background: #0077b5;
+      color: white;
+      padding: 1rem 1.3rem;
+      border-radius: 999px;
+      transition: var(--transition);
       font-weight: 600;
-
     }
 
     .linkedin-btn:hover {
-
-      transform:
-        translateY(-4px);
-
-      box-shadow:
-        0 0 25px rgba(0, 119, 181, 0.5);
-
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px rgba(0, 119, 181, 0.5);
     }
 
     /* FOOTER */
-
     footer {
-
-      padding:
-        2rem 0;
-
+      padding: 4rem 0;
       text-align: center;
+      color: var(--muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-      color:
-        var(--muted);
+    footer h2 {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+    }
 
-      border-top:
-        1px solid rgba(255, 255, 255, 0.08);
+    footer p {
+      font-size: .95rem;
+    }
 
+    footer .social {
+      margin-top: 1.5rem;
+      gap: 1rem;
+    }
+
+    footer .social a {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.08);
     }
 
     /* LEAVES */
-
     .leaves {
-
       position: fixed;
-
       inset: 0;
-
       overflow: hidden;
-
       pointer-events: none;
-
       z-index: -1;
-
     }
 
     .leaf {
-
       position: absolute;
-
       top: -50px;
-
-      color:
-        #8effb2;
-
-      opacity:
-        .8;
-
-      font-size:
-        18px;
-
-      animation:
-        fall linear infinite;
-
+      color: #8effb2;
+      opacity: .8;
+      font-size: 18px;
+      animation: fall linear infinite;
     }
 
     @keyframes fall {
-
       from {
-        transform:
-          translateY(-60px) rotate(0deg);
+        transform: translateY(-60px) rotate(0deg);
       }
-
       to {
-        transform:
-          translateY(120vh) translateX(100px) rotate(720deg);
+        transform: translateY(120vh) translateX(100px) rotate(720deg);
       }
     }
 
+    /* UTILITIES */
+    .text-center {
+      text-align: center;
+    }
+
+    .mt-1 {
+      margin-top: 1rem;
+    }
+
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+
     /* RESPONSIVE */
-
     @media (max-width: 920px) {
-
       .hero-card {
-
-        grid-template-columns:
-          1fr;
-
+        grid-template-columns: 1fr;
         text-align: center;
-
       }
 
       .buttons,
       .social {
-
         justify-content: center;
-
       }
     }
 
     @media (max-width: 560px) {
-
       .hero-content h1 {
-
         letter-spacing: 1px;
-
       }
 
       nav a {
-
-        padding:
-          .7rem .85rem;
-
+        padding: .7rem .85rem;
       }
 
       .btn {
-
         width: 100%;
         justify-content: center;
+      }
 
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
     }
 
     @media (prefers-reduced-motion: reduce) {
-
       * {
         animation: none !important;
         transition: none !important;
@@ -999,63 +642,45 @@
 </head>
 
 <body>
-
   <!-- CUSTOM CURSOR -->
-
   <div class="cursor"></div>
   <div class="cursor-dot"></div>
 
   <!-- LEAVES -->
-
-  <div class="leaves"
-    id="leaves"></div>
+  <div class="leaves" id="leaves"></div>
 
   <!-- HEADER -->
-
   <header>
     <div class="header-inner">
-
       <div class="logo">
         ISHALI CHAVAN
       </div>
-
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
   <!-- HERO -->
-
-  <section class="hero"
-    id="home">
-
+  <section class="hero" id="home">
     <div class="container">
-
       <div class="hero-card glass">
-
         <div class="profile">
-
           <img src="https://i.imgur.com/8Km9tLL.jpg"
             alt="Ishali Chavan">
-
         </div>
-
         <div class="hero-content">
-
           <h1>
             ISHALI CHAVAN
           </h1>
-
           <h2>
             Assistant Manager • Finance Professional • SAP Specialist
           </h2>
-
           <p>
             Results-driven finance professional with expertise in revenue management,
             financial reporting, SAP systems, business analytics, and process optimization.
@@ -1063,203 +688,353 @@
             efficiency, and supporting strategic business decisions in fast-paced corporate
             environments.
           </p>
-
           <div class="buttons">
-
-            <a href="ishalichavan.pdf"
-              class="btn primary"
-              download>
-
+            <a href="ishali_chavan_cv.pdf" class="btn primary" download>
               <i class="fa-solid fa-download"></i>
               Download CV
-
             </a>
-
-            <a href="#contact"
-              class="btn secondary">
-
+            <a href="#contact" class="btn secondary">
               <i class="fa-solid fa-paper-plane"></i>
               Contact Me
-
             </a>
-
           </div>
-
           <div class="social">
-
             <a href="mailto:ishalidc@gmail.com">
               <i class="fa-solid fa-envelope"></i>
             </a>
-
             <a href="tel:+919011970169">
               <i class="fa-solid fa-phone"></i>
             </a>
-
-            <a href="https://www.linkedin.com/in/ishali-chavan"
-              target="_blank">
-
+            <a href="https://www.linkedin.com/in/ishali-chavan" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
 
   <!-- ABOUT -->
-
   <section id="about">
-
     <div class="container">
-
       <div class="section-title">
-
         <h2>About Me</h2>
-
         <p>
           Passionate finance professional focused on delivering business value through
           accurate reporting, strategic analysis, and modern financial systems.
         </p>
-
       </div>
-
       <div class="grid">
-
         <div class="card glass">
-
           <i class="fa-solid fa-chart-line"></i>
-
           <h3>Financial Analysis</h3>
-
           <p>
             Skilled in analyzing financial data, preparing reports, forecasting trends,
             and supporting strategic business planning.
           </p>
-
         </div>
-
         <div class="card glass">
-
           <i class="fa-solid fa-database"></i>
-
           <h3>SAP & Reporting</h3>
-
           <p>
             Experienced with SAP processes, reporting systems, revenue tracking,
             reconciliations, and operational financial workflows.
           </p>
-
         </div>
-
         <div class="card glass">
-
           <i class="fa-solid fa-lightbulb"></i>
-
           <h3>Problem Solving</h3>
-
           <p>
             Strong analytical and communication skills with a focus on process improvement,
             accuracy, and efficiency.
           </p>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
 
   <!-- EXPERIENCE -->
-
   <section id="experience">
-
     <div class="container">
-
       <div class="section-title">
-
         <h2>Professional Experience</h2>
-
         <p>
           A professional journey built on finance operations, analytical thinking,
           reporting excellence, and process management.
         </p>
-
       </div>
-
       <div class="experience-item glass">
-
         <h3>Assistant Manager</h3>
-
         <h4>Wipro Limited</h4>
-
         <p>
           Managing revenue operations, preparing financial reports, monitoring business
           performance metrics, and supporting financial planning activities. Collaborating
           with cross-functional teams to ensure accurate reporting, operational efficiency,
           and compliance with internal financial standards.
         </p>
-
       </div>
-
       <div class="experience-item glass">
-
         <h3>Revenue Management Specialist</h3>
-
         <h4>Finance Operations</h4>
-
         <p>
           Worked on revenue tracking, invoicing processes, reconciliations, and reporting
           activities to maintain financial accuracy and improve workflow efficiency.
           Assisted in identifying revenue gaps and enhancing reporting transparency.
         </p>
-
       </div>
-
       <div class="experience-item glass">
-
         <h3>Business & Financial Analyst</h3>
-
         <h4>Corporate Finance</h4>
-
         <p>
           Supported business decision-making through financial analysis, dashboard reporting,
           Excel-based insights, and data interpretation. Focused on improving visibility
           into financial performance and operational trends.
         </p>
-
       </div>
-
     </div>
-
   </section>
 
   <!-- SKILLS -->
-
   <section id="skills">
-
     <div class="container">
-
       <div class="section-title">
-
         <h2>Skills & Expertise</h2>
-
         <p>
           Strong technical and analytical capabilities with modern finance tools and systems.
         </p>
-
       </div>
-
       <div class="grid">
-
-        <div class="card glass">
-          <h3>SAP</h3>
+        <div class="card skill-card glass">
+          <h3>Finance & Analysis</h3>
+          <p>Financial Reporting</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 95%;"></div>
+          </div>
+          <p>Revenue Management</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 92%;"></div>
+          </div>
+          <p>Accounts Receivable</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+          <p>Financial Analysis</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 88%;"></div>
+          </div>
         </div>
+        <div class="card skill-card glass">
+          <h3>Software & Tools</h3>
+          <p>SAP</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+          <p>Microsoft Excel</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 96%;"></div>
+          </div>
+          <p>Business Analysis</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 88%;"></div>
+          </div>
+          <p>PowerPoint</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 92%;"></div>
+          </div>
+        </div>
+        <div class="card skill-card glass">
+          <h3>Languages</h3>
+          <p>English (Professional)</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 98%;"></div>
+          </div>
+          <p>Hindi (Native)</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <p>Marathi (Native)</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>
+          Key contributions and initiatives that highlight my professional capabilities.
+        </p>
+      </div>
+      <div class="grid">
+        <div class="card glass">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Revenue Process Optimization</h3>
+          <p>
+            Led initiatives to streamline Revenue CFL and COE processes, enhance financial
+            reporting accuracy, and improve operational efficiency using SAP and Excel tools.
+          </p>
+        </div>
+        <div class="card glass">
+          <i class="fa-solid fa-chart-pie"></i>
+          <h3>Business Reporting Dashboard</h3>
+          <p>
+            Developed interactive dashboards and reports in Microsoft Excel, leveraging
+            financial data and pivot tables to support data-driven business decision-making.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>
+          Let's connect! I'm always open to discussing opportunities, collaborations,
+          and innovative financial solutions.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item glass">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:ishalidc@gmail.com">ishalidc@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-item glass">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p>
+            <a href="tel:+919011970169">+91 9011970169</a>
+          </p>
+        </div>
+        <div class="contact-item glass">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>Pune, 411046, India</p>
+        </div>
+      </div>
+      <div class="text-center mt-1">
+        <a href="https://www.linkedin.com/in/ishali-chavan" target="_blank" class="linkedin-btn">
+          <i class="fa-brands fa-linkedin"></i>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h2>Thank You</h2>
+      <p>
+        Designed & Developed with <span style="color: #ff4a6a;">❤</span> by Ishali Chavan
+      </p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/ishali-chavan" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: .9rem;">
+        © 2026 Ishali Chavan. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Custom Cursor
+    const cursor = document.querySelector('.cursor');
+    const cursorDot = document.querySelector('.cursor-dot');
+    const links = document.querySelectorAll('a, button, .btn');
+
+    document.addEventListener('mousemove', (e) => {
+      let x = e.clientX;
+      let y = e.clientY;
+
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
+      cursorDot.style.left = `${x}px`;
+      cursorDot.style.top = `${y}px`;
+    });
+
+    links.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+        cursorDot.classList.add('hover');
+      });
+      link.addEventListener('mouseout', () => {
+        cursor.classList.remove('hover');
+        cursorDot.classList.remove('hover');
+      });
+    });
+
+    // Leaves Animation
+    const leavesContainer = document.getElementById('leaves');
+    const numLeaves = 40;
+
+    for (let i = 0; i < numLeaves; i++) {
+      const leaf = document.createElement('div');
+      leaf.classList.add('leaf');
+      leaf.innerHTML = '&#127803;'; // Leaf emoji
+
+      const size = Math.random() * 18 + 12; // Random size between 12px and 30px
+      leaf.style.fontSize = `${size}px`;
+      leaf.style.left = `${Math.random() * 100}vw`;
+      leaf.style.animationDuration = `${Math.random() * 10 + 8}s`;
+      leaf.style.animationDelay = `${Math.random() * 10}s`;
+      leaf.style.opacity = Math.random() * 0.4 + 0.5; // Opacity between 0.5 and 0.9
+      leavesContainer.appendChild(leaf);
+    }
+
+    // Progress Bar Animation
+    const bars = document.querySelectorAll('.progress-bar');
+    const barObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const width = bar.style.width;
+          bar.style.width = '0'; // Reset to animate from 0
+          setTimeout(() => {
+            bar.style.width = width; // Animate to full width
+          }, 200); // Small delay to ensure reset is applied
+        }
+      });
+    }, {
+      threshold: 0.5
+    }); // Trigger when 50% is visible
+
+    bars.forEach(bar => barObserver.observe(bar));
+
+    // Active Navigation Link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 150; // Offset to activate earlier
+        if (window.scrollY >= top) {
+          currentSection = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === currentSection) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+```
